@@ -1,0 +1,210 @@
+body {
+    background: #044;
+}
+section {
+    font-family: sans-serif;
+    width: 750px;
+    margin:0 auto;
+    text-align:center;
+    background-color: transparent; 
+}
+.key {
+    background-color: #00f;
+}
+.keys {
+    padding: 0; 
+    position:relative; 
+    z-index: 1;
+    background-position: top center;
+    background-repeat: no-repeat;
+    width: 20px;
+    vertical-align:top;
+    background-size:cover;
+    /* background-color: transparent;  */
+}
+.wht {
+    width: 20px;
+    height: 150px;
+}
+.blk {
+    width: 15px;
+    height: 95px;
+    z-index: 2;
+}
+
+
+.C {margin-left:-3.5px;}
+.Db {margin-left:-14px;width:15px;}
+.D {margin-left:-8.5px;}
+.Eb {margin-left:-10px;width:15px;}
+.E { margin-left:-11.75px;}
+.F { margin-left:-3.25px;}
+.Gb { margin-left:-14px;width:15px; }
+.G { margin-left:-9px; }
+.Ab { margin-left:-12px;width:15px;}
+.A { margin-left:-10.5px; }
+.Bb { margin-left:-12px;}
+.B { margin-left:-11px; }
+.C8 { margin-left:-3px;}
+
+.C, 
+.F { 
+    background-image:url(https://notation.netcentrx.net/piano-grid/img/w01.svg) 
+}
+.D, 
+.G,
+.A { 
+    background-image:url(https://notation.netcentrx.net/piano-grid/img/w02.svg) 
+}
+.E,
+.B { 
+    background-image:url(https://notation.netcentrx.net/piano-grid/img/w03.svg) 
+}
+.Db,
+.Eb,
+.Gb,
+.Ab,
+.Bb { 
+    background-image:url(https://notation.netcentrx.net/piano-grid/img/b02.svg) 
+}
+.A1 { 
+    background-image:url(https://notation.netcentrx.net/piano-grid/img/w00.svg) 
+}
+.C8 { 
+    background-image:url(https://notation.netcentrx.net/piano-grid/img/w04.svg) 
+}
+button:active,
+button.blk:active {
+    background: rgba(200, 200, 0 ,0.1);
+}
+
+button { 
+    border:none;
+    cursor:pointer;
+} 
+
+#oct1,
+#oct2,
+#oct3,
+#oct4,
+#oct5,
+#oct6,
+#oct7 {
+    position:absolute;
+    width:146px;
+    background: #033;
+    left:50%;
+    margin-top:5px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+#oct1 { margin-left:-516px; }
+#oct2 { margin-left:-366px; }
+#oct3 { margin-left:-217px; }
+#oct4 { margin-left:-68px; }
+#oct5 { margin-left:80px; }
+#oct6 { margin-left:230px; }
+#oct7 { margin-left:376px; }
+    
+#now_playing {
+    position:absolute;
+    width:800px;
+    text-align:center;
+    font-size: 2rem;
+    left:50%;
+    margin-left:-400px;
+    top:0;
+    margin-top:200px;
+    font-weight: 700;
+    color:#fff;
+    font-family: sans-serif;
+}
+
+.hilite {
+    background: #0cc;
+    background: rgba(0, 250, 250, 0.5);
+}
+
+.hilite2 {
+    background: #0cc;
+    background: rgba(0, 125, 125, 0.95);
+}
+
+.oct_hilite {
+    color: #0cc;
+    color: rgba(0, 200, 200, 0.75);
+}
+#chords {
+    font-family: sans-serif;
+    width: 800px;
+    margin:100px auto;
+    text-align:center;    
+}    
+
+.normal {
+    font-weight: normal;
+    color:rgba(0, 250, 250, 0.5);
+}
+
+button.chord {
+    font-size: 1.5rem;
+    border-radius:0.25rem;
+    margin:0.25rem;
+    padding: 0.2rem;
+}
+
+button.chord:active,
+button.chord:hover {
+    background:silver;
+}
+
+.none {
+    display:none;
+}
+
+.title {
+    font-family: sans-serif;
+    width: 600px;
+    margin:0 auto;
+    margin-top:95px;
+    text-align:center;
+    color: white;
+    font-size: 2.5rem;
+    text-shadow:1px 1px 1px #bbb, 1.5px 1.5px 1.5px #999;
+}
+
+.artist {
+    color:rgba(0, 250, 250, 0.5);
+    font-size: 2rem;
+}
+
+section.section {
+    color:rgba(0, 250, 250, 0.5);
+    font-size:1.5rem;
+}
+section.section h3 {
+    margin: 0.25rem;
+}
+
+footer {
+    font-family: sans-serif;
+    width: 800px;
+    margin:0 auto;
+    margin-top: 75px;
+    text-align:center;
+    margin:2rem auto;
+}
+footer a {
+    color:white;
+    font-weight: bold;
+    padding: 0.5rem;
+    border:1px groove #044;
+    background: #066;
+    border-radius:0.25rem;
+    text-decoration:none;
+    margin:0.30rem 0.50rem 0.30rem 0.50rem;
+}
+footer a:hover {
+    margin:0.25rem 0.55rem 0.35rem 0.45rem;
+}

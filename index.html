@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Piano</title>
+    <link rel="stylesheet" id="style-css" href="style.css">
+</head>
+<body>
+    
+<section>
+    <!-- <button id="A0" data-note="A1" class="A A1 keys oct0 wht"></button> 
+    <button id="Bb0" data-note="Bb1" class="Bb keys oct0 blk"></button>
+    <button id="B0" data-note="B1" class="B keys wht"></button> 
+
+    <button id="C1" class="C keys oct1 wht"></button>
+    <button id="Db1" class="Db keys oct1 blk"></button>
+    <button id="D1" class="D keys oct1 wht"></button> 
+    <button id="Eb1" class="Eb keys oct1 blk"></button>
+    <button id="E1" class="E keys oct1 wht"></button> 
+    <button id="F1" class="F keys oct1 wht"></button> 
+    <button id="Gb1" class="Gb keys oct1 blk"></button>
+    <button id="G1" class="G keys oct1 wht"></button> 
+    <button id="Ab1" class="Ab keys oct1 blk"></button>
+    <button id="A1" class="A keys oct1 wht"></button> 
+    <button id="Bb1" class="Bb keys oct1 blk"></button>
+    <button id="B1" class="B keys oct1 wht"></button> 
+ -->
+    <button id="C2" data-note="C2" class="C keys oct2 wht"></button>
+    <button id="Db2" data-note="Db2" class="Db keys oct2 blk"></button>
+    <button id="D2" data-note="D2" class="D keys oct2 wht"></button> 
+    <button id="Eb2" data-note="Eb2" class="Eb keys oct2 blk"></button>
+    <button id="E2" data-note="E2" class="E keys oct2 wht"></button> 
+    <button id="F2" data-note="F2" class="F keys oct2 wht"></button> 
+    <button id="Gb2" data-note="Gb2" class="Gb keys oct2 blk"></button>
+    <button id="G2" data-note="G2" class="G keys oct2 wht"></button> 
+    <button id="Ab2" data-note="Ab2" class="Ab keys oct2 blk"></button>
+    <button id="A2" data-note="A2" class="A keys oct2 wht"></button> 
+    <button id="Bb2" data-note="Bb2" class="Bb keys oct2 blk"></button>
+    <button id="B2" data-note="B2" class="B keys oct2 wht"></button> 
+
+    <button id="C3" data-note="C3" class="C keys oct3 wht"></button>
+    <button id="Db3" data-note="Db3" class="Db keys oct3 blk"></button>
+    <button id="D3" data-note="D3" class="D keys oct3 wht"></button> 
+    <button id="Eb3" data-note="Eb3" class="Eb keys oct3 blk"></button>
+    <button id="E3" data-note="E3" class="E keys oct3 wht"></button> 
+    <button id="F3" data-note="F3" class="F keys oct3 wht"></button> 
+    <button id="Gb3" data-note="Gb3" class="Gb keys oct3 blk"></button>
+    <button id="G3" data-note="G3" class="G keys oct3 wht"></button> 
+    <button id="Ab3" data-note="Ab3" class="Ab keys oct3 blk"></button>
+    <button id="A3" data-note="A3" class="A keys oct3 wht"></button> 
+    <button id="Bb3" data-note="Bb3" class="Bb keys oct3 blk"></button>
+    <button id="B3" data-note="B3" class="B keys oct3 wht"></button> 
+
+    <button id="C4" data-note="C4" class="C keys oct4 wht"></button>
+    <button id="Db4" data-note="Db4" class="Db keys oct4 blk"></button>
+    <button id="D4" data-note="D4" class="D keys oct4 wht"></button> 
+    <button id="Eb4" data-note="Eb4" class="Eb keys oct4 blk"></button>
+    <button id="E4" data-note="E4" class="E keys oct4 wht"></button> 
+    <button id="F4" data-note="F4" class="F keys oct4 wht"></button> 
+    <button id="Gb4" data-note="Gb4" class="Gb keys oct4 blk"></button>
+    <button id="G4" data-note="G4" class="G keys oct4 wht"></button> 
+    <button id="Ab4" data-note="Ab4" class="Ab keys oct4 blk"></button>
+    <button id="A4" data-note="A4" class="A keys oct4 wht"></button> 
+    <button id="Bb4" data-note="Bb4" class="Bb keys oct4 blk"></button>
+    <button id="B4" data-note="B4" class="B keys oct4 wht"></button> 
+
+    <button id="C5" data-note="C5" class="C keys oct5 wht"></button>
+    <button id="Db5" data-note="Db5" class="Db keys oct5 blk"></button>
+    <button id="D5" data-note="D5" class="D keys oct5 wht"></button> 
+    <button id="Eb5" data-note="Eb5" class="Eb keys oct5 blk"></button>
+    <button id="E5" data-note="E5" class="E keys oct5 wht"></button> 
+    <button id="F5" data-note="F5" class="F keys oct5 wht"></button> 
+    <button id="Gb5" data-note="Gb5" class="Gb keys oct5 blk"></button>
+    <button id="G5" data-note="G5" class="G keys oct5 wht"></button> 
+    <button id="Ab5" data-note="Ab5" class="Ab keys oct5 blk"></button>
+    <button id="A5" data-note="A5" class="A keys oct5 wht"></button> 
+    <button id="Bb5" data-note="Bb5" class="Bb keys oct5 blk"></button>
+    <button id="B5" data-note="B5" class="B keys oct5 wht"></button> 
+
+    <button id="C6" data-note="C6" class="C keys oct6 wht"></button>
+    <button id="Db6" data-note="Db6" class="Db keys oct6 blk"></button>
+    <button id="D6" data-note="D6" class="D keys oct6 wht"></button> 
+    <button id="Eb6" data-note="Eb6" class="Eb keys oct6 blk"></button>
+    <button id="E6" data-note="E6" class="E keys oct6 wht"></button> 
+    <button id="F6" data-note="F6" class="F keys oct6 wht"></button> 
+    <button id="Gb6" data-note="Gb6" class="Gb keys oct6 blk"></button>
+    <button id="G6" data-note="G6" class="G keys oct6 wht"></button> 
+    <button id="Ab6" data-note="Ab6" class="Ab keys oct6 blk"></button>
+    <button id="A6" data-note="A6" class="A keys oct6 wht"></button> 
+    <button id="Bb6" data-note="Bb6" class="Bb keys oct6 blk"></button>
+    <button id="B6" data-note="B6" class="B keys oct6 wht"></button> 
+
+    <div id="oct2" class="octave gray">octave 2</div>
+    <div id="oct3" class="octave gray">octave 3</div>
+    <div id="oct4" class="octave gray">octave 4</div>
+    <div id="oct5" class="octave gray">octave 5</div>
+    <div id="oct6" class="octave gray">octave 6</div>
+    <div id="now_playing"></div>
+</section>
+<div id="chords" class="none"></div>
+
+<h1 id="title" class="title none">Title</h1>
+
+<section id="intro" class="section none"><h3>Intro</h3></section>
+<section id="verse" class="section none"><h3>Verse</h3></section>
+<section id="chorus" class="section none"><h3>Chorus</h3></section>
+<section id="bridge" class="section none"><h3>Bridge</h3></section>
+
+<br><br><br>
+<footer>
+    <a href="?js=C4-B4">Misc. Chords 1</a>
+    <a href="?js=C4-B4">Misc. Chords 2</a>
+    <a href="?js=your-song">Your Song</a>
+</footer>a
+    
+<script src="https://js.netcentrx.net/reset-cache.js?dt=20220406"></script>
+<script id="script-js" src="script.js"></script>
+<script>
+resetCache('style-css', randInt(99999));
+resetCache('script-js', randInt(99999), true);
+resetCache('song-js', randInt(99999), true);
+</script>
+</body>
+</html>
